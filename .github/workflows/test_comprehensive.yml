@@ -119,7 +119,7 @@ jobs:
       # `tox -e py38-linux-pyqt,py38-linux-pyside`
       # see tox.ini for more
       - name: Test with tox
-        uses: aganders3/headless-gui@v1
+        uses: aganders3/headless-gui@v2
         with:
           run: python -m tox
         env:
@@ -172,7 +172,7 @@ jobs:
           pip install ./napari-plot-from-github[all,testing]
 
       - name: Test
-        uses: aganders3/headless-gui@v1
+        uses: aganders3/headless-gui@v2
         with:
           run: pytest --pyargs napari_plot --color=yes
 
@@ -191,7 +191,7 @@ jobs:
           pip install setuptools tox tox-gh-actions
 
       - name: Test
-        uses: aganders3/headless-gui@v1
+        uses: aganders3/headless-gui@v2
         with:
           run: tox -e py39-linux-pyside2-examples
 
