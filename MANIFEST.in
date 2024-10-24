@@ -24,3 +24,5 @@ exclude dockerfile
 exclude napari_plot _version.py
 exclude mkdocs.yml
 exclude .readthedocs.yaml
+exclude .napari *
+exclude .napari-hub *
