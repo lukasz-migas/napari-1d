@@ -154,7 +154,7 @@ jobs:
             ./report-*.json
 
       - name: Coverage
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v5
 
   test_pip_install:
     name: ubuntu-latest 3.8 pip install
