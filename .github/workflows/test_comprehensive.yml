@@ -131,7 +131,7 @@ jobs:
           MIN_REQ: ${{ matrix.MIN_REQ }}
 
       - name: Coverage
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v5
 
 
       - name: Report Failures
