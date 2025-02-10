@@ -1,6 +1,6 @@
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
     - id: no-commit-to-branch
       args: ['--branch', 'master', "--branch", "main"]
@@ -10,25 +10,25 @@ repos:
     -   id: absolufy-imports
         exclude: _vendor|vendored|examples|examples_with_napari
 -   repo: https://github.com/hadialqattan/pycln
-    rev: v2.4.0
+    rev: v2.5.0
     hooks:
     - id: pycln
 -   repo: https://github.com/pycqa/isort
-    rev: 5.13.2
+    rev: 6.0.0
     hooks:
     - id: isort
 -   repo: https://github.com/psf/black
-    rev: 24.8.0
+    rev: 25.1.0
     hooks:
     - id: black
       pass_filenames: true
 -   repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.6.7
+    rev: v0.9.6
     hooks:
       - id: ruff
         exclude: _vendor|vendored
 -   repo: https://github.com/seddonym/import-linter
-    rev: v2.0
+    rev: v2.2
     hooks:
     - id: import-linter
       stages: [manual]
